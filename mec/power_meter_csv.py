@@ -6,13 +6,12 @@ import time
 
 import logging
 
-
 class PowerMeter():
     """Power meter for working out consumed power over time"""
 
     log = logging.getLogger(__name__)
 
-    def __init__(self, name=None):
+    def __init__(self, name=None, show_kWh_in_Data=True):
 
         # Value seconds, for positive values only.
         self.name = name
@@ -22,12 +21,16 @@ class PowerMeter():
         # Most recent sample time.
         self._prev_time = None
         self._have_data = False
+        if show_kWh_in_Data:
+            self._kWh_String = 'kWh'
+        else:
+            self._kWh_String = ''
 
     def __str__(self):
         if self.neg_value:
-            return '{:.3f}kWh -{:.3f}kWh'.format(self.value / (60*60*1000),
-                                                 self.neg_value / (60*60*1000))
-        return '{:.3f}kWh'.format(self.value / (60*60*1000))
+            return '{:.3f}{} -{:.3f}{}'.format(self.value / (60*60*1000), self._kWh_String,
+                                                 self.neg_value / (60*60*1000), self._kWh_String)
+        return '{:.3f}{}'.format(self.value / (60*60*1000), self._kWh_String)
 
     def add_value(self, value, sample_time):
         """Add a value, with timestamp."""
@@ -60,8 +63,7 @@ class PowerMeter():
     def reset_value(self, kwh=0):
         """Reset timer to zero"""
         new_value = kwh * (60*60*1000)
-        self.log.debug("Resetting '%s' to %.3f %s",
-                       self.name, new_value / (60*60*1000), str(self))
+        self.log.debug("Resetting '%s' to %.3f %s", self.name, new_value / (60*60*1000), str(self))
         self.value = new_value
         self.neg_value = 0
         self._have_data = False
