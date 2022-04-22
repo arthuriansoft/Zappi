@@ -8,17 +8,20 @@ Based on work by:
 - https://github.com/ashleypittman/mec
 - https://github.com/twonk/MyEnergi-App-Api
 
+Create ~/.zappirc file e.g.
+>`username: <serial number of hub>`  
+>`password: <API key>`
+
 Install pre-requisites with:  
 >`pip install -r requirements.txt`
 
 ## Notes
 - Time stamps are UTC.
-- CT clamp values are only returned 'per-minute' and not accumulated 'per-hour'.
-
-pect1 - Grid Import
-pect2 - Solar
-nect3 - iBoost+
-div - Zappi
+- CT clamp values are only returned 'per-minute' and not accumulated 'per-hour'.  
+ pect1 - Grid Import  
+  pect2 - Solar  
+  nect3 - iBoost+  
+  div - Zappi
 
 ## To Do
 - Test running for date ranges.
