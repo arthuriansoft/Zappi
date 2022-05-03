@@ -35,6 +35,5 @@ zappi,totals,<day>,c,i,e,s,w
 ## To Do
 - Need to insert zeros where blank so every line has same number of fields.
 - Write awk script to aggregate output and format for InfluxDB.
-- Write main script to call other scripts for required dates. Should make note of when run so it will gather stats since last run.
 - Create DB and import.
 - Create dashboards - one for details and one for totals.
