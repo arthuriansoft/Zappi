@@ -1,27 +1,32 @@
 # Zappi
+Scripts to pull usage data from Zappi via MyEnergi API which is then formatted as a CSV file and imported into InfluxDB. Works as a wrapper around the get_zappi_history.py script.
 
-Scripts to pull usage data from Zappi via MyEnergi API and to output as a CSV file for importing into InfluxDB.
-
-Works as a wrapper around the get_zappi_history.py script, aggregating and formatting the output as a CSV file ready for import.
-
-First clone ashleypittman's repo and create ~/.zappirc file e.g.
->`username: <serial number of hub>`  
->`password: <API key>`
-
-and install pre-requisites with:  
->`pip install -r requirements.txt`
+Designed to be run periodically as opposed to continually i.e. once a month (the hub only keeps two months of data). The script only imports whole days worth of data and remembers when it was last run, making it easy to re-run on an adhoc basis.
 
 Based on work by:
 
-- https://github.com/prlakerveld/mec
 - https://github.com/ashleypittman/mec
 - https://github.com/twonk/MyEnergi-App-Api
 
+## Setup
+Clone this repo into a directory then clone ashleypittman's repo inside it.
+
+Create the ~/.zappirc file with the following content:
+>`username: <serial number of hub>`  
+>`password: <API key>`
+
+Within the mec directory install pre-requisites with:  
+>`pip install -r requirements.txt`
+
 ## InfluxDB Schema
-#datatype measurement,tag,dateTime:?,double,double,double,double,double
+I've used the following schema to store grid import / export (CT1), car charging (Zappi diverted), solar PV generation (CT2) and immersion heater diverter (CT3).
+
+I'm storing aggregated per-minute values every quarter of an hour to enable 'detailed' per day information, but also storing the daily totals to enable longer term usage analysis.
+
+#datatype measurement,tag,dateTime:-TBD-,double,double,double,double,double
 m,range,time,car,import,export,solar,water  
-zappi,15m,<time>,c,i,e,s,w  
-zappi,totals,<day>,c,i,e,s,w
+zappi,15m,time,c,i,e,s,w  
+zappi,totals,day,c,i,e,s,w
 
 ## Notes
 - Time stamps are UTC.
@@ -33,7 +38,7 @@ zappi,totals,<day>,c,i,e,s,w
 - It's possible the API will change in the future. This way I can just update the mec repo and hopefully everything else will continue to work.
 
 ## To Do
-- Need to insert zeros where blank so every line has same number of fields.
-- Write awk script to aggregate output and format for InfluxDB.
-- Create DB and import.
+- Write awk script to aggregate output and format for InfluxDB.  
+  Check date format needed for CSV that awk must produce.
+- Test imports to DB
 - Create dashboards - one for details and one for totals.
