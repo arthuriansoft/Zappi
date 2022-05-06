@@ -21,7 +21,7 @@ Within the mec directory install pre-requisites with:
 ## InfluxDB Schema
 I've used the following schema to store grid import / export (CT1), car charging (Zappi diverted), solar PV generation (CT2) and immersion heater diverter (CT3).
 
-I'm storing aggregated per-minute values every quarter of an hour to enable 'detailed' per day information, but also storing the daily totals to enable longer term usage analysis.
+I'm storing averaged per-minute values for every quarter of an hour to enable 'detailed' per day information, but also storing the daily totals to enable longer term usage analysis.
 
 #datatype measurement,tag,dateTime:-TBD-,double,double,double,double,double
 m,range,time,car,import,export,solar,water  
@@ -38,7 +38,7 @@ zappi,totals,day,c,i,e,s,w
 - It's possible the API will change in the future. This way I can just update the mec repo and hopefully everything else will continue to work.
 
 ## To Do
-- Write awk script to aggregate output and format for InfluxDB.  
+- Write awk script to average output and format for InfluxDB.  
   Check date format needed for CSV that awk must produce.
 - Test imports to DB
 - Create dashboards - one for details and one for totals.
