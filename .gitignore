@@ -4,3 +4,5 @@ __pycache__
 mec/
 last_run
 day.temp
+solar.csv
+zappi.csv
