@@ -18,15 +18,22 @@ Create the ~/.zappirc file with the following content:
 Within the mec directory install pre-requisites with:  
 >`pip install -r requirements.txt`
 
-## InfluxDB Schema
+## InfluxDB Schemas
 I've used the following schema to store grid import / export (CT1), car charging (Zappi diverted), solar PV generation (CT2) and immersion heater diverter (CT3).
 
-I'm storing averaged per-minute values for every quarter of an hour to enable 'detailed' per day information, but also storing the daily totals to enable longer term usage analysis.
+I'm storing averaged per-minute values for every quarter of an hour (this is configurable via the 'average' variable in the awk script and deals with missing data) to enable 'detailed' per day information, but also storing the daily totals to enable longer term usage analysis.
 
-#datatype measurement,tag,dateTime:-TBD-,double,double,double,double,double
+#datatype measurement,tag,dateTime:RFC3339,double,double,double,double,double
 m,range,time,car,import,export,solar,water  
 zappi,15m,time,c,i,e,s,w  
 zappi,totals,day,c,i,e,s,w
+
+A second measurement is also created to store the max solar values taken from the per-minute readings for each day. This can show the performance of the panels over time and maybe indicate when they need cleaning!
+
+#datatype measurement,dateTime:2022-01-01,double
+m,time,max 
+solar_max,time,value
+
 
 ## Notes
 - Time stamps are UTC.

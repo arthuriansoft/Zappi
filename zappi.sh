@@ -5,6 +5,17 @@
 # Variables
 LAST_RUN=`cat last_run`
 TODAY=`date -I`
+BUCKET=zappi        # InfluxDB bucket name
+ORG=MyOrg           # InfluxDB organisation name
+DAY_TMP=day.temp    # Temp output file name
+ZAPPI_CSV=zappi.csv # Temp CSV file name
+SOLAR_CSV=solar.csv # Temp CSV file name
+export SOLAR_CSV
+
+if [ "$INFLUX_TOKEN" == "" ]
+then
+    read -sp "Please enter your InfluxDB token: " INFLUX_TOKEN
+fi
 
 # Check for last_run date
 if [ "$LAST_RUN" = "" ]
@@ -17,22 +28,24 @@ fi
 while [ "$LAST_RUN" != "$TODAY" ]
 do
     # Call python API script to obtain stats for this day
-    echo "Obtaining data for $LAST_RUN..."
-    #python mec/get_zappi_history.py --day=`date -d $LAST_RUN +%d` --month=`date -d $LAST_RUN +%m` --year=`date -d $LAST_RUN +%Y` --per-minute > day.temp
+    echo -n "Obtaining data for $LAST_RUN... "
+    #python mec/get_zappi_history.py --day=`date -d $LAST_RUN +%d` --month=`date -d $LAST_RUN +%m` --year=`date -d $LAST_RUN +%Y` --per-minute > $DAY_TEMP
 
     # Process data with awk 
-    export LAST_RUN
-    awk -f zappi.awk day.temp
+    echo -n "formatting... "
+    awk -f zappi.awk $DAY_TEMP > $ZAPPI_CSV
 
     # Import into InfluxDB
-
-
+    echo "importing..."
+    #influx write -p -s -b $BUCKET -o $ORG -f $ZAPPI_CSV
+    #influx write -p -s -b $BUCKET -o $ORG -f $SOLAR_CSV
 
     LAST_RUN=`date -I -d "$LAST_RUN + 1 day"`
+    export LAST_RUN
 done
 
 # Update last run file
 #echo -n $TODAY > last_run
 
 # Clean up
-# rm day.temp
+#rm $DAY_TEMP $ZAPPI_CSV $SOLAR_CSV
