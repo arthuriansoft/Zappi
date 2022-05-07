@@ -30,23 +30,23 @@ while [ "$LAST_RUN" != "$TODAY" ]
 do
     # Call python API script to obtain stats for this day
     echo -n "Obtaining data for $LAST_RUN... "
-    #python mec/get_zappi_history.py --day=`date -d $LAST_RUN +%d` --month=`date -d $LAST_RUN +%m` --year=`date -d $LAST_RUN +%Y` --per-minute > $DAY_TEMP
+    python mec/get_zappi_history.py --day=`date -d $LAST_RUN +%d` --month=`date -d $LAST_RUN +%m` --year=`date -d $LAST_RUN +%Y` --per-minute > $DAY_TEMP
 
     # Process data with awk 
     echo -n "formatting... "
+    export LAST_RUN
     awk -f zappi.awk $DAY_TEMP > $ZAPPI_CSV
 
     # Import into InfluxDB
     echo "importing..."
-    #influx write -b $BUCKET -o $ORG -f $ZAPPI_CSV
-    #influx write -b $BUCKET -o $ORG -f $SOLAR_CSV
+    influx write -b $BUCKET -o $ORG -f $ZAPPI_CSV
+    influx write -b $BUCKET -o $ORG -f $SOLAR_CSV
 
     LAST_RUN=`date -I -d "$LAST_RUN + 1 day"`
-    export LAST_RUN
 done
 
 # Update last run file
-#echo -n $TODAY > last_run
+echo -n $TODAY > last_run
 
 # Clean up
-#rm $DAY_TEMP $ZAPPI_CSV $SOLAR_CSV
+rm $DAY_TEMP $ZAPPI_CSV $SOLAR_CSV

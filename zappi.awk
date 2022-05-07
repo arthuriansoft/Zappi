@@ -18,11 +18,11 @@ BEGIN {
 $1~/[0-90-9:0-90-9]/ {
 
     # Debug...
-    c=substr($0,81,5)
-    i=substr($0,117,5)
-    e=substr($0,127,5)
-    s=substr($0,137,5)
-    w=substr($0,167,5)
+    c=substr($0,81,7)
+    i=substr($0,117,7)
+    e=substr($0,127,7)
+    s=substr($0,137,7)
+    w=substr($0,167,7)
     #printf("time=%s, car=%d, import=%d, export=%d, solar=%d, water=%d\n",$1,c,i,e,s,w)
 
     # Reset totals
@@ -36,12 +36,12 @@ $1~/[0-90-9:0-90-9]/ {
 
     # Add values to totals
     if (loop <= average) {
-        car=car+substr($0,81,5)
-        import=import+substr($0,117,5)
-        export=export+substr($0,127,5)
-        this_solar=substr($0,137,5) # This value is used when comparing max
+        car=car+substr($0,81,7)
+        import=import+substr($0,117,7)
+        export=export+substr($0,127,7)
+        this_solar=substr($0,137,7) # This value is used when comparing max
         solar=solar+this_solar
-        water=water+substr($0,167,5)
+        water=water+substr($0,167,7)
     }
 
     # Check for missing data
@@ -95,13 +95,14 @@ $1~/[0-90-9:0-90-9]/ {
 
 # Process totals
 $1=="Totals"  {
-    car=substr($0,81,5)
-    import=substr($0,117,5)
-    export=substr($0,127,5)
-    solar=substr($0,137,5)
-    water=substr($0,167,5)
+    gsub(/kWh/,"   ")
+    car=substr($0,81,7)
+    import=substr($0,117,7)
+    export=substr($0,127,7)
+    solar=substr($0,137,7)
+    water=substr($0,167,7)
     time=date"T00:00:00Z"
-    printf("zappi,totals,%s,%s,%s,%s,%s,%s\n",time,car,import,export,solar,water)
+    printf("zappi,totals,%s,%.3f,%.3f,%.3f,%.3f,%.3f\n",time,car,import,export,solar,water)
 }
 
 # Print out max solar details
