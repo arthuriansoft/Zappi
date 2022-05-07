@@ -30,7 +30,7 @@ zappi,totals,day,c,i,e,s,w
 
 A second measurement is also created to store the max solar values taken from the per-minute readings for each day. This can show the performance of the panels over time and maybe indicate when they need cleaning!
 
-#datatype measurement,dateTime:2022-01-01,double  
+#datatype measurement,dateTime:RFC3339,double  
 m,time,max  
 solar_max,time,value
 

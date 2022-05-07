@@ -106,7 +106,8 @@ $1=="Totals"  {
 
 # Print out max solar details
 END {
-    printf("#datatype measurement,dateTime:2022-01-01,double\n") > solar_csv
+    time=date"T00:00:00Z"
+    printf("#datatype measurement,dateTime:RFC3339,double\n") > solar_csv
     printf("m,time,max\n") >> solar_csv
-    printf("solar_max,%s,%d\n",date,max_solar) >> solar_csv
+    printf("solar_max,%s,%d\n",time,max_solar) >> solar_csv
 }

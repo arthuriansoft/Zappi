@@ -5,7 +5,7 @@
 # Variables
 LAST_RUN=`cat last_run`
 TODAY=`date -I`
-BUCKET=zappi        # InfluxDB bucket name
+BUCKET=MyEnergi     # InfluxDB bucket name
 ORG=MyOrg           # InfluxDB organisation name
 DAY_TEMP=day.temp   # Temp output file name
 ZAPPI_CSV=zappi.csv # Temp CSV file name
@@ -38,8 +38,8 @@ do
 
     # Import into InfluxDB
     echo "importing..."
-    #influx write -p -s -b $BUCKET -o $ORG -f $ZAPPI_CSV
-    #influx write -p -s -b $BUCKET -o $ORG -f $SOLAR_CSV
+    #influx write -b $BUCKET -o $ORG -f $ZAPPI_CSV
+    #influx write -b $BUCKET -o $ORG -f $SOLAR_CSV
 
     LAST_RUN=`date -I -d "$LAST_RUN + 1 day"`
     export LAST_RUN
