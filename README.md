@@ -1,5 +1,5 @@
 # Zappi
-Scripts to pull usage data from Zappi via MyEnergi API which is then formatted as a CSV file and imported into InfluxDB. Works as a wrapper around the get_zappi_history.py script.
+Scripts to pull usage data from Zappi via MyEnergi API which is then formatted as a CSV file and imported into InfluxDB. Works as a wrapper around the get_zappi_history.py script. I opted for this approach, rather than modifying the get_zappi_history.py output, as the API might change in the future (MyEnergi are working on a public API).
 
 Designed to be run periodically as opposed to continually i.e. once a month (the hub only keeps two months of data). The script only imports whole days worth of data and remembers when it was last run, making it easy to re-run on an adhoc basis.
 
@@ -34,18 +34,6 @@ A second measurement is also created to store the max solar values taken from th
 m,time,max  
 solar_max,time,value
 
-
-## Notes
-- Time stamps are UTC.
-- CT clamp values are only returned 'per-minute' and not accumulated 'per-hour'.  
-  pect1 - Grid Import  
-  pect2 - Solar  
-  nect3 - iBoost+  
-  div - Zappi
-- It's possible the API will change in the future. This way I can just update the mec repo and hopefully everything else will continue to work.
-
 ## To Do
-- Write awk script to average output and format for InfluxDB.  
-  Check date format needed for CSV that awk must produce.
 - Test imports to DB
 - Create dashboards - one for details and one for totals.
