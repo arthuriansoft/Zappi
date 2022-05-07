@@ -7,7 +7,7 @@ LAST_RUN=`cat last_run`
 TODAY=`date -I`
 BUCKET=zappi        # InfluxDB bucket name
 ORG=MyOrg           # InfluxDB organisation name
-DAY_TMP=day.temp    # Temp output file name
+DAY_TEMP=day.temp   # Temp output file name
 ZAPPI_CSV=zappi.csv # Temp CSV file name
 SOLAR_CSV=solar.csv # Temp CSV file name
 export SOLAR_CSV
@@ -15,6 +15,7 @@ export SOLAR_CSV
 if [ "$INFLUX_TOKEN" == "" ]
 then
     read -sp "Please enter your InfluxDB token: " INFLUX_TOKEN
+    echo
 fi
 
 # Check for last_run date
