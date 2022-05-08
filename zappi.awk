@@ -68,7 +68,7 @@ $1~/[0-90-9:0-90-9]/ {
         water=water/(average-skip)
 
         time=date"T"$1":00Z"
-        printf("zappi,15m,%s,%d,%d,%d,%d,%d\n",time,car,import,export,solar,water)
+        printf("zappi,%sm,%s,%d,%d,%d,%d,%d\n",average,time,car,import,export,solar,water)
 
         if (loop > average) {
             loop=(loop-average)+1   # Make the next loop shorter to recover from missing data
