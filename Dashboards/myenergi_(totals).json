@@ -1,0 +1,1298 @@
+{
+ "meta": {
+  "version": "1",
+  "type": "dashboard",
+  "name": "MyEnergi (Totals)-Template",
+  "description": "template created from dashboard: MyEnergi (Totals)"
+ },
+ "content": {
+  "data": {
+   "type": "dashboard",
+   "attributes": {
+    "name": "MyEnergi (Totals)",
+    "description": ""
+   },
+   "relationships": {
+    "label": {
+     "data": []
+    },
+    "cell": {
+     "data": [
+      {
+       "type": "cell",
+       "id": "09555b95cb2a0000"
+      },
+      {
+       "type": "cell",
+       "id": "09555b95cfaa0000"
+      },
+      {
+       "type": "cell",
+       "id": "09555b95d42a0000"
+      },
+      {
+       "type": "cell",
+       "id": "09555b95d86a0000"
+      },
+      {
+       "type": "cell",
+       "id": "09555b95dcea0000"
+      },
+      {
+       "type": "cell",
+       "id": "09555b95e16a0000"
+      },
+      {
+       "type": "cell",
+       "id": "09555b95e5aa0000"
+      },
+      {
+       "type": "cell",
+       "id": "09555b95ea2a0000"
+      },
+      {
+       "type": "cell",
+       "id": "09555b95eeaa0000"
+      },
+      {
+       "type": "cell",
+       "id": "09555b95f32a0000"
+      },
+      {
+       "type": "cell",
+       "id": "09555b95f76a0000"
+      },
+      {
+       "type": "cell",
+       "id": "09555b95fbea0000"
+      }
+     ]
+    },
+    "variable": {
+     "data": []
+    }
+   }
+  },
+  "included": [
+   {
+    "id": "09555b95cb2a0000",
+    "type": "cell",
+    "attributes": {
+     "x": 0,
+     "y": 0,
+     "w": 12,
+     "h": 3
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "09555b95cb2a0000"
+      }
+     }
+    }
+   },
+   {
+    "id": "09555b95cfaa0000",
+    "type": "cell",
+    "attributes": {
+     "x": 0,
+     "y": 3,
+     "w": 12,
+     "h": 1
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "09555b95cfaa0000"
+      }
+     }
+    }
+   },
+   {
+    "id": "09555b95d42a0000",
+    "type": "cell",
+    "attributes": {
+     "x": 0,
+     "y": 7,
+     "w": 12,
+     "h": 1
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "09555b95d42a0000"
+      }
+     }
+    }
+   },
+   {
+    "id": "09555b95d86a0000",
+    "type": "cell",
+    "attributes": {
+     "x": 0,
+     "y": 4,
+     "w": 12,
+     "h": 3
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "09555b95d86a0000"
+      }
+     }
+    }
+   },
+   {
+    "id": "09555b95dcea0000",
+    "type": "cell",
+    "attributes": {
+     "x": 0,
+     "y": 8,
+     "w": 12,
+     "h": 3
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "09555b95dcea0000"
+      }
+     }
+    }
+   },
+   {
+    "id": "09555b95e16a0000",
+    "type": "cell",
+    "attributes": {
+     "x": 0,
+     "y": 11,
+     "w": 12,
+     "h": 1
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "09555b95e16a0000"
+      }
+     }
+    }
+   },
+   {
+    "id": "09555b95e5aa0000",
+    "type": "cell",
+    "attributes": {
+     "x": 0,
+     "y": 15,
+     "w": 12,
+     "h": 1
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "09555b95e5aa0000"
+      }
+     }
+    }
+   },
+   {
+    "id": "09555b95ea2a0000",
+    "type": "cell",
+    "attributes": {
+     "x": 0,
+     "y": 12,
+     "w": 12,
+     "h": 3
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "09555b95ea2a0000"
+      }
+     }
+    }
+   },
+   {
+    "id": "09555b95eeaa0000",
+    "type": "cell",
+    "attributes": {
+     "x": 0,
+     "y": 16,
+     "w": 12,
+     "h": 3
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "09555b95eeaa0000"
+      }
+     }
+    }
+   },
+   {
+    "id": "09555b95f32a0000",
+    "type": "cell",
+    "attributes": {
+     "x": 0,
+     "y": 19,
+     "w": 12,
+     "h": 1
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "09555b95f32a0000"
+      }
+     }
+    }
+   },
+   {
+    "id": "09555b95f76a0000",
+    "type": "cell",
+    "attributes": {
+     "x": 0,
+     "y": 20,
+     "w": 12,
+     "h": 3
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "09555b95f76a0000"
+      }
+     }
+    }
+   },
+   {
+    "id": "09555b95fbea0000",
+    "type": "cell",
+    "attributes": {
+     "x": 0,
+     "y": 23,
+     "w": 12,
+     "h": 1
+    },
+    "relationships": {
+     "view": {
+      "data": {
+       "type": "view",
+       "id": "09555b95fbea0000"
+      }
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "09555b95cb2a0000",
+    "attributes": {
+     "name": "Solar",
+     "properties": {
+      "shape": "chronograf-v2",
+      "queries": [
+       {
+        "text": "from(bucket: \"MyEnergi\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"zappi\")\n  |> filter(fn: (r) => r[\"_field\"] == \"solar\")\n  |> filter(fn: (r) => r[\"range\"] == \"totals\")\n  |> aggregateWindow(every: 24h, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": [],
+           "aggregateFunctionType": "filter"
+          }
+         ],
+         "functions": [
+          {
+           "name": "mean"
+          }
+         ],
+         "aggregateWindow": {
+          "period": "auto",
+          "fillValues": false
+         }
+        }
+       }
+      ],
+      "axes": {
+       "x": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       },
+       "y": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "kWh",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       }
+      },
+      "type": "xy",
+      "staticLegend": {
+       "colorizeRows": true,
+       "opacity": 1,
+       "orientationThreshold": 100000000,
+       "widthRatio": 1
+      },
+      "geom": "monotoneX",
+      "colors": [
+       {
+        "id": "92742c38-8595-4856-9ff0-cd2077a205aa",
+        "type": "scale",
+        "hex": "#34BB55",
+        "name": "Solid Green",
+        "value": 0
+       },
+       {
+        "id": "4dee7e6b-f2e6-480b-b848-87e8400fa0dd",
+        "type": "scale",
+        "hex": "#34BB55",
+        "name": "Solid Green",
+        "value": 0
+       },
+       {
+        "id": "7b61f6f3-7725-4298-9257-a36958f6a8fb",
+        "type": "scale",
+        "hex": "#34BB55",
+        "name": "Solid Green",
+        "value": 0
+       }
+      ],
+      "note": "",
+      "showNoteWhenEmpty": false,
+      "xColumn": "_time",
+      "generateXAxisTicks": [],
+      "xTotalTicks": 0,
+      "xTickStart": 0,
+      "xTickStep": 0,
+      "yColumn": "_value",
+      "generateYAxisTicks": [],
+      "yTotalTicks": 0,
+      "yTickStart": 0,
+      "yTickStep": 0,
+      "shadeBelow": true,
+      "position": "overlaid",
+      "timeFormat": "",
+      "hoverDimension": "auto",
+      "legendColorizeRows": true,
+      "legendHide": false,
+      "legendOpacity": 1,
+      "legendOrientationThreshold": 100000000
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "09555b95cfaa0000",
+    "attributes": {
+     "name": "Solar Total",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"MyEnergi\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"zappi\")\n  |> filter(fn: (r) => r[\"_field\"] == \"solar\")\n  |> filter(fn: (r) => r[\"range\"] == \"totals\")\n  |> sum()",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": [],
+           "aggregateFunctionType": "filter"
+          }
+         ],
+         "functions": [
+          {
+           "name": "mean"
+          }
+         ],
+         "aggregateWindow": {
+          "period": "auto",
+          "fillValues": false
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "tickPrefix": "",
+      "suffix": "kWh",
+      "tickSuffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#32B08C",
+        "name": "viridian",
+        "value": 0
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "09555b95d42a0000",
+    "attributes": {
+     "name": "Import Total",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"MyEnergi\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"zappi\")\n  |> filter(fn: (r) => r[\"_field\"] == \"import\")\n  |> filter(fn: (r) => r[\"range\"] == \"totals\")\n  |> sum()",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": [],
+           "aggregateFunctionType": "filter"
+          }
+         ],
+         "functions": [
+          {
+           "name": "mean"
+          }
+         ],
+         "aggregateWindow": {
+          "period": "auto",
+          "fillValues": false
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "tickPrefix": "",
+      "suffix": "kWh",
+      "tickSuffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#BF3D5E",
+        "name": "ruby",
+        "value": 0
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "09555b95d86a0000",
+    "attributes": {
+     "name": "Import",
+     "properties": {
+      "shape": "chronograf-v2",
+      "queries": [
+       {
+        "text": "from(bucket: \"MyEnergi\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"zappi\")\n  |> filter(fn: (r) => r[\"_field\"] == \"import\")\n  |> filter(fn: (r) => r[\"range\"] == \"totals\")\n  |> aggregateWindow(every: 24h, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": [],
+           "aggregateFunctionType": "filter"
+          }
+         ],
+         "functions": [
+          {
+           "name": "mean"
+          }
+         ],
+         "aggregateWindow": {
+          "period": "auto",
+          "fillValues": false
+         }
+        }
+       }
+      ],
+      "axes": {
+       "x": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       },
+       "y": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "kWh",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       }
+      },
+      "type": "xy",
+      "staticLegend": {
+       "colorizeRows": true,
+       "opacity": 1,
+       "orientationThreshold": 100000000,
+       "widthRatio": 1
+      },
+      "geom": "monotoneX",
+      "colors": [
+       {
+        "id": "c78ca7fd-e503-4419-b572-34bc3c32947d",
+        "type": "scale",
+        "hex": "#DC4E58",
+        "name": "Solid Red",
+        "value": 0
+       },
+       {
+        "id": "0288edb8-a246-4a92-ac84-eee90bce5c9e",
+        "type": "scale",
+        "hex": "#DC4E58",
+        "name": "Solid Red",
+        "value": 0
+       },
+       {
+        "id": "12de3379-0730-429b-a291-5835c79d7f2f",
+        "type": "scale",
+        "hex": "#DC4E58",
+        "name": "Solid Red",
+        "value": 0
+       }
+      ],
+      "note": "",
+      "showNoteWhenEmpty": false,
+      "xColumn": "_time",
+      "generateXAxisTicks": [],
+      "xTotalTicks": 0,
+      "xTickStart": 0,
+      "xTickStep": 0,
+      "yColumn": "_value",
+      "generateYAxisTicks": [],
+      "yTotalTicks": 0,
+      "yTickStart": 0,
+      "yTickStep": 0,
+      "shadeBelow": true,
+      "position": "overlaid",
+      "timeFormat": "",
+      "hoverDimension": "auto",
+      "legendColorizeRows": true,
+      "legendHide": false,
+      "legendOpacity": 1,
+      "legendOrientationThreshold": 100000000
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "09555b95dcea0000",
+    "attributes": {
+     "name": "Export",
+     "properties": {
+      "shape": "chronograf-v2",
+      "queries": [
+       {
+        "text": "from(bucket: \"MyEnergi\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"zappi\")\n  |> filter(fn: (r) => r[\"_field\"] == \"export\")\n  |> filter(fn: (r) => r[\"range\"] == \"totals\")\n  |> aggregateWindow(every: 24h, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": [],
+           "aggregateFunctionType": "filter"
+          }
+         ],
+         "functions": [
+          {
+           "name": "mean"
+          }
+         ],
+         "aggregateWindow": {
+          "period": "auto",
+          "fillValues": false
+         }
+        }
+       }
+      ],
+      "axes": {
+       "x": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       },
+       "y": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "kWh",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       }
+      },
+      "type": "xy",
+      "staticLegend": {
+       "colorizeRows": true,
+       "opacity": 1,
+       "orientationThreshold": 100000000,
+       "widthRatio": 1
+      },
+      "geom": "monotoneX",
+      "colors": [
+       {
+        "id": "add435aa-4500-46fb-9132-c7be80d93c7f",
+        "type": "scale",
+        "hex": "#FFD255",
+        "name": "Solid Yellow",
+        "value": 0
+       },
+       {
+        "id": "7f9e1579-2d9f-45a6-b03e-8fb2884e2086",
+        "type": "scale",
+        "hex": "#FFD255",
+        "name": "Solid Yellow",
+        "value": 0
+       },
+       {
+        "id": "dbca06b3-36cf-48ac-a047-eb6189606b7d",
+        "type": "scale",
+        "hex": "#FFD255",
+        "name": "Solid Yellow",
+        "value": 0
+       }
+      ],
+      "note": "",
+      "showNoteWhenEmpty": false,
+      "xColumn": "_time",
+      "generateXAxisTicks": [],
+      "xTotalTicks": 0,
+      "xTickStart": 0,
+      "xTickStep": 0,
+      "yColumn": "_value",
+      "generateYAxisTicks": [],
+      "yTotalTicks": 0,
+      "yTickStart": 0,
+      "yTickStep": 0,
+      "shadeBelow": true,
+      "position": "overlaid",
+      "timeFormat": "",
+      "hoverDimension": "auto",
+      "legendColorizeRows": true,
+      "legendHide": false,
+      "legendOpacity": 1,
+      "legendOrientationThreshold": 100000000
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "09555b95e16a0000",
+    "attributes": {
+     "name": "Export Total",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"MyEnergi\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"zappi\")\n  |> filter(fn: (r) => r[\"_field\"] == \"export\")\n  |> filter(fn: (r) => r[\"range\"] == \"totals\")\n  |> sum()",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": [],
+           "aggregateFunctionType": "filter"
+          }
+         ],
+         "functions": [
+          {
+           "name": "mean"
+          }
+         ],
+         "aggregateWindow": {
+          "period": "auto",
+          "fillValues": false
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "tickPrefix": "",
+      "suffix": "kWh",
+      "tickSuffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#FFD255",
+        "name": "thunder",
+        "value": 0
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "09555b95e5aa0000",
+    "attributes": {
+     "name": "Car Total",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"MyEnergi\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"zappi\")\n  |> filter(fn: (r) => r[\"_field\"] == \"car\")\n  |> filter(fn: (r) => r[\"range\"] == \"totals\")\n  |> sum()",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": [],
+           "aggregateFunctionType": "filter"
+          }
+         ],
+         "functions": [
+          {
+           "name": "mean"
+          }
+         ],
+         "aggregateWindow": {
+          "period": "auto",
+          "fillValues": false
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "tickPrefix": "",
+      "suffix": "kWh",
+      "tickSuffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#4591ED",
+        "name": "ocean",
+        "value": 0
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "09555b95ea2a0000",
+    "attributes": {
+     "name": "Car",
+     "properties": {
+      "shape": "chronograf-v2",
+      "queries": [
+       {
+        "text": "from(bucket: \"MyEnergi\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"zappi\")\n  |> filter(fn: (r) => r[\"_field\"] == \"car\")\n  |> filter(fn: (r) => r[\"range\"] == \"totals\")\n  |> aggregateWindow(every: 24h, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": [],
+           "aggregateFunctionType": "filter"
+          }
+         ],
+         "functions": [
+          {
+           "name": "mean"
+          }
+         ],
+         "aggregateWindow": {
+          "period": "auto",
+          "fillValues": false
+         }
+        }
+       }
+      ],
+      "axes": {
+       "x": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       },
+       "y": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "kWh",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       }
+      },
+      "type": "xy",
+      "staticLegend": {
+       "colorizeRows": true,
+       "opacity": 1,
+       "orientationThreshold": 100000000,
+       "widthRatio": 1
+      },
+      "geom": "monotoneX",
+      "colors": [
+       {
+        "id": "a3bade24-ca42-40b9-9e4f-f0062c375b4e",
+        "type": "scale",
+        "hex": "#00A3FF",
+        "name": "Solid Blue",
+        "value": 0
+       },
+       {
+        "id": "f4b9ccd3-1fd3-48f6-94f9-74f625179e59",
+        "type": "scale",
+        "hex": "#00A3FF",
+        "name": "Solid Blue",
+        "value": 0
+       },
+       {
+        "id": "2da7a3b3-6875-4c30-91b5-9033417770cf",
+        "type": "scale",
+        "hex": "#00A3FF",
+        "name": "Solid Blue",
+        "value": 0
+       }
+      ],
+      "note": "",
+      "showNoteWhenEmpty": false,
+      "xColumn": "_time",
+      "generateXAxisTicks": [],
+      "xTotalTicks": 0,
+      "xTickStart": 0,
+      "xTickStep": 0,
+      "yColumn": "_value",
+      "generateYAxisTicks": [],
+      "yTotalTicks": 0,
+      "yTickStart": 0,
+      "yTickStep": 0,
+      "shadeBelow": true,
+      "position": "overlaid",
+      "timeFormat": "",
+      "hoverDimension": "auto",
+      "legendColorizeRows": true,
+      "legendHide": false,
+      "legendOpacity": 1,
+      "legendOrientationThreshold": 100000000
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "09555b95eeaa0000",
+    "attributes": {
+     "name": "Water",
+     "properties": {
+      "shape": "chronograf-v2",
+      "queries": [
+       {
+        "text": "from(bucket: \"MyEnergi\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"zappi\")\n  |> filter(fn: (r) => r[\"_field\"] == \"water\")\n  |> filter(fn: (r) => r[\"range\"] == \"totals\")\n  |> aggregateWindow(every: 24h, fn: mean, createEmpty: false)\n  |> yield(name: \"mean\")",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": [],
+           "aggregateFunctionType": "filter"
+          }
+         ],
+         "functions": [
+          {
+           "name": "mean"
+          }
+         ],
+         "aggregateWindow": {
+          "period": "auto",
+          "fillValues": false
+         }
+        }
+       }
+      ],
+      "axes": {
+       "x": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       },
+       "y": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "kWh",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       }
+      },
+      "type": "xy",
+      "staticLegend": {
+       "colorizeRows": true,
+       "opacity": 1,
+       "orientationThreshold": 100000000,
+       "widthRatio": 1
+      },
+      "geom": "monotoneX",
+      "colors": [
+       {
+        "id": "a3bade24-ca42-40b9-9e4f-f0062c375b4e",
+        "type": "scale",
+        "hex": "#00A3FF",
+        "name": "Solid Blue",
+        "value": 0
+       },
+       {
+        "id": "f4b9ccd3-1fd3-48f6-94f9-74f625179e59",
+        "type": "scale",
+        "hex": "#00A3FF",
+        "name": "Solid Blue",
+        "value": 0
+       },
+       {
+        "id": "2da7a3b3-6875-4c30-91b5-9033417770cf",
+        "type": "scale",
+        "hex": "#00A3FF",
+        "name": "Solid Blue",
+        "value": 0
+       }
+      ],
+      "note": "",
+      "showNoteWhenEmpty": false,
+      "xColumn": "_time",
+      "generateXAxisTicks": [],
+      "xTotalTicks": 0,
+      "xTickStart": 0,
+      "xTickStep": 0,
+      "yColumn": "_value",
+      "generateYAxisTicks": [],
+      "yTotalTicks": 0,
+      "yTickStart": 0,
+      "yTickStep": 0,
+      "shadeBelow": true,
+      "position": "overlaid",
+      "timeFormat": "",
+      "hoverDimension": "auto",
+      "legendColorizeRows": true,
+      "legendHide": false,
+      "legendOpacity": 1,
+      "legendOrientationThreshold": 100000000
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "09555b95f32a0000",
+    "attributes": {
+     "name": "Water Total",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"MyEnergi\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"zappi\")\n  |> filter(fn: (r) => r[\"_field\"] == \"water\")\n  |> filter(fn: (r) => r[\"range\"] == \"totals\")\n  |> sum()",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": [],
+           "aggregateFunctionType": "filter"
+          }
+         ],
+         "functions": [
+          {
+           "name": "mean"
+          }
+         ],
+         "aggregateWindow": {
+          "period": "auto",
+          "fillValues": false
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "tickPrefix": "",
+      "suffix": "kWh",
+      "tickSuffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#4591ED",
+        "name": "ocean",
+        "value": 0
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "09555b95f76a0000",
+    "attributes": {
+     "name": "Consumed",
+     "properties": {
+      "shape": "chronograf-v2",
+      "queries": [
+       {
+        "text": "from(bucket: \"MyEnergi\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"zappi\")\n  |> filter(fn: (r) => r[\"_field\"] == \"solar\" or r[\"_field\"] == \"import\" or r[\"_field\"] == \"export\")\n  |> filter(fn: (r) => r[\"range\"] == \"totals\")\n  |> pivot(rowKey: [\"_time\"], columnKey: [\"_field\"], valueColumn: \"_value\")\n  |> rename(columns: {\"import\": \"grid_in\"})\n  |> map(fn: (r) => ({ r with _value: r.grid_in + r.solar - r.export }))",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": [],
+           "aggregateFunctionType": "filter"
+          }
+         ],
+         "functions": [
+          {
+           "name": "mean"
+          }
+         ],
+         "aggregateWindow": {
+          "period": "auto",
+          "fillValues": false
+         }
+        }
+       }
+      ],
+      "axes": {
+       "x": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       },
+       "y": {
+        "bounds": [
+         "",
+         ""
+        ],
+        "label": "kWh",
+        "prefix": "",
+        "suffix": "",
+        "base": "10",
+        "scale": "linear"
+       }
+      },
+      "type": "xy",
+      "staticLegend": {
+       "colorizeRows": true,
+       "opacity": 1,
+       "orientationThreshold": 100000000,
+       "widthRatio": 1
+      },
+      "geom": "monotoneX",
+      "colors": [
+       {
+        "id": "6032fe26-3af6-4763-8808-b67a5b499118",
+        "type": "scale",
+        "hex": "#BE2EE4",
+        "name": "Solid Purple",
+        "value": 0
+       },
+       {
+        "id": "ac97c14f-4376-4ce1-a571-ef09cc6dd786",
+        "type": "scale",
+        "hex": "#BE2EE4",
+        "name": "Solid Purple",
+        "value": 0
+       },
+       {
+        "id": "4fba5a29-099f-456a-b357-8a66b7a87920",
+        "type": "scale",
+        "hex": "#BE2EE4",
+        "name": "Solid Purple",
+        "value": 0
+       }
+      ],
+      "note": "",
+      "showNoteWhenEmpty": false,
+      "xColumn": "_time",
+      "generateXAxisTicks": [],
+      "xTotalTicks": 0,
+      "xTickStart": 0,
+      "xTickStep": 0,
+      "yColumn": "_value",
+      "generateYAxisTicks": [],
+      "yTotalTicks": 0,
+      "yTickStart": 0,
+      "yTickStep": 0,
+      "shadeBelow": true,
+      "position": "overlaid",
+      "timeFormat": "",
+      "hoverDimension": "auto",
+      "legendColorizeRows": true,
+      "legendHide": false,
+      "legendOpacity": 1,
+      "legendOrientationThreshold": 100000000
+     }
+    }
+   },
+   {
+    "type": "view",
+    "id": "09555b95fbea0000",
+    "attributes": {
+     "name": "Consumed Total",
+     "properties": {
+      "shape": "chronograf-v2",
+      "type": "single-stat",
+      "queries": [
+       {
+        "text": "from(bucket: \"MyEnergi\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r[\"_measurement\"] == \"zappi\")\n  |> filter(fn: (r) => r[\"_field\"] == \"solar\" or r[\"_field\"] == \"import\" or r[\"_field\"] == \"export\")\n  |> filter(fn: (r) => r[\"range\"] == \"totals\")\n  |> pivot(rowKey: [\"_time\"], columnKey: [\"_field\"], valueColumn: \"_value\")\n  |> rename(columns: {\"import\": \"grid_in\"})\n  |> map(fn: (r) => ({ r with _value: r.grid_in + r.solar - r.export }))\n  |> sum()",
+        "editMode": "advanced",
+        "name": "",
+        "builderConfig": {
+         "buckets": [],
+         "tags": [
+          {
+           "key": "_measurement",
+           "values": [],
+           "aggregateFunctionType": "filter"
+          }
+         ],
+         "functions": [
+          {
+           "name": "mean"
+          }
+         ],
+         "aggregateWindow": {
+          "period": "auto",
+          "fillValues": false
+         }
+        }
+       }
+      ],
+      "prefix": "",
+      "tickPrefix": "",
+      "suffix": "kWh",
+      "tickSuffix": "",
+      "colors": [
+       {
+        "id": "base",
+        "type": "text",
+        "hex": "#7A65F2",
+        "name": "star",
+        "value": 0
+       }
+      ],
+      "decimalPlaces": {
+       "isEnforced": true,
+       "digits": 2
+      },
+      "note": "",
+      "showNoteWhenEmpty": false
+     }
+    }
+   }
+  ]
+ },
+ "labels": []
+}
