@@ -35,5 +35,5 @@ m,time,max
 solar_max,time,value
 
 ## To Do
-- Test imports to DB
 - Create dashboards - one for details and one for totals.
+- Export dashboard and store in repo.
