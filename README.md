@@ -33,7 +33,3 @@ A second measurement is also created to store the max solar values taken from th
 #datatype measurement,dateTime:RFC3339,double  
 m,time,max  
 solar_max,time,value
-
-## To Do
-- Create dashboards - one for details and one for totals.
-- Export dashboard and store in repo.
