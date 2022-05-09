@@ -14,8 +14,9 @@ export SOLAR_CSV
 
 if [ "$INFLUX_TOKEN" == "" ]
 then
-    read -sp "Please enter your InfluxDB token: " INFLUX_TOKEN
+    read -rsp "Please enter your InfluxDB token: " INFLUX_TOKEN
     echo
+    export INFLUX_TOKEN
 fi
 
 # Check for last_run date
