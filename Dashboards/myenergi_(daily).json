@@ -10,7 +10,7 @@
    "type": "dashboard",
    "attributes": {
     "name": "MyEnergi (Daily)",
-    "description": ""
+    "description": "Energy usage graphs showing readings every fifteen minutes."
    },
    "relationships": {
     "label": {

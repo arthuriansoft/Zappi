@@ -10,7 +10,7 @@
    "type": "dashboard",
    "attributes": {
     "name": "MyEnergi (YoY)",
-    "description": ""
+    "description": "Energy usage graphs for fixed years."
    },
    "relationships": {
     "label": {

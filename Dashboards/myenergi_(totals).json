@@ -10,7 +10,7 @@
    "type": "dashboard",
    "attributes": {
     "name": "MyEnergi (Totals)",
-    "description": ""
+    "description": "Energy usage graphs based on daily totals."
    },
    "relationships": {
     "label": {
