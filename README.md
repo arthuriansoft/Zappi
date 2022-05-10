@@ -1,7 +1,7 @@
 # Zappi
 Scripts to pull usage data from Zappi via MyEnergi API which is then formatted as a CSV file and imported into InfluxDB. Works as a wrapper around the get_zappi_history.py script. I opted for this approach, rather than modifying the get_zappi_history.py output, as the API might change in the future (MyEnergi are supposedly working on a public API).
 
-Designed to be run periodically as opposed to continually i.e. once a month. The script only imports whole days worth of data and remembers when it was last run, making it easy to re-run on an adhoc basis.
+Designed to be run periodically as opposed to continually i.e. once a month. The script only imports whole days worth of data and remembers when it was last run, making it easy to re-run on an adhoc basis. The last run date is stored in the file "last_run". If not set then the script will pull the last two months of data.
 
 Based on work by:
 
