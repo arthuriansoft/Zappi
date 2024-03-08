@@ -102,6 +102,11 @@ $1=="Totals"  {
     solar=substr($0,137,7)
     water=substr($0,167,7)
     time=date"T00:00:00Z"
+    if (car + 0.0 < 0) car = car * -1
+    if (import + 0.0 < 0) import = import * -1
+    if (export + 0.0 < 0) export = export * -1
+    if (solar + 0.0 < 0) solar = solar * -1
+    if (water + 0.0 < 0) water = water * -1
     printf("zappi,totals,%s,%.3f,%.3f,%.3f,%.3f,%.3f\n",time,car,import,export,solar,water)
 }
 
